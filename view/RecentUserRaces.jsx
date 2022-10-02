@@ -10,6 +10,7 @@ export default function RecentUserRaces({
   noNames = false,
   noScore = false,
   forceRefresh = 0,
+  user = {},
 }) {
   const [races, setRaces] = useState(data);
   const [refresh, setRefresh] = useState(0);
@@ -18,7 +19,7 @@ export default function RecentUserRaces({
   const speedUnit = getUnit();
 
   useEffect(() => {
-    if (races.length && !refresh && !forceRefresh) return;
+    if ((races.length && !refresh && !forceRefresh) || !user.username) return;
     setLoading(true);
     setShowButton(false);
 

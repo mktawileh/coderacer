@@ -220,6 +220,7 @@ export default function ({ userState, titleState }) {
       />
       <RecentUserRaces
         forceRefresh={done && user.username ? code._id.toString() : null}
+        user={user}
       />
     </Page>
   );

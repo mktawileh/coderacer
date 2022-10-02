@@ -174,9 +174,14 @@ exports.getAll = async function (req, res) {
 };
 
 exports.getRandomCodes = async function (req, res) {
-  const { number = 69 } = req.body;
+  let { number = 69 } = req.body;
+  number = parseInt(number);
   try {
-    const codes = await Code.aggregate([{ $sample: { size: number } }]);
+    const codes = await Code.aggregate([
+      { $sample: { size: number } },
+      { $match: { deleted: false } },
+      { $project: { f: 1 } },
+    ]);
 
     return res.send({
       status: true,

@@ -22,8 +22,8 @@ class Server {
 
   async connectDB() {
     try {
-      mongoose.connect(process.env.MONGODB_URL, {
-        // mongoose.connect("mongodb://localhost:27017/coderacer", {
+      // mongoose.connect(process.env.MONGODB_URL, {
+      mongoose.connect("mongodb://localhost:27017/coderacer", {
         useUnifiedTopology: true,
         useNewUrlParser: true,
       });

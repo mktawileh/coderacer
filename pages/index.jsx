@@ -35,7 +35,7 @@ export default function Main({ userState }) {
                 </li>
 
                 <li className="list-group-item">
-                  <small>Not Python for sure 💩</small>
+                  <small>Not Python 😬..</small>
                 </li>
               </ul>
             </div>
