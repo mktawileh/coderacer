@@ -1,0 +1,65 @@
+$levels: (
+  nb: #555,
+  // 0 - 48
+  pup: #1b950e,
+  // 49 - 60
+  pro: #948e11,
+  // 61 - 82
+  ex: #08969b,
+  // 83 - 108
+  mst: #2e23aa,
+  // 109 - 149
+  gm: #9f0b75,
+  // 150+
+);
+
+:export {
+  nb: map-get($levels, nb);
+  pup: map-get($levels, pup);
+  pro: map-get($levels, pro);
+  ex: map-get($levels, ex);
+  mst: map-get($levels, mst);
+  gm: map-get($levels, gm);
+}
+// .nb-lvl {
+//   // 0 - 48
+//   color: #555;
+//   &:hover {
+//     color: rgb(60, 60, 60);
+//   }
+// }
+// .pup-lvl {
+//   // 49 - 60
+//   color: #1b950e;
+//   &:hover {
+//     color: rgb(25, 126, 13);
+//   }
+// }
+// .ex-lvl {
+//   // 61 - 82
+//   color: #b3ab12;
+//   &:hover {
+//     color: rgb(157, 150, 16);
+//   }
+// }
+// .pro-lvl {
+//   // 83 - 108
+//   color: #08969b;
+//   &:hover {
+//     color: rgb(8, 122, 126);
+//   }
+// }
+// .mst-lvl {
+//   // 109 - 149
+//   color: #b34e4e;
+//   &:hover {
+//     color: rgb(148, 61, 61);
+//   }
+// }
+// .gm-lvl {
+//   // 150+
+//   color: #9b0880;
+//   &:hover {
+//     color: rgb(134, 9, 111);
+//   }
+// }
