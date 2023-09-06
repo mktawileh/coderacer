@@ -395,6 +395,7 @@ textarea {
         user-select: none;
         position: relative;
         transition: margin ease-in-out 0.3s;
+        letter-spacing: -0.1rem;
         &:after {
           content: "";
           width: 100%;
